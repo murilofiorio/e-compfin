@@ -1,0 +1,71 @@
+:root {
+    --fundo-cinza: #DCDCDC;
+    --fundo-bg-cinza: #4F4F4F;
+    --txt-claro: #FFFFFF;
+    --rodape-preto: #000000;
+    --txt-preto: #000000
+}
+
+body {
+    margin: 0; /* Remove as margens padrão do body */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--fundo-cinza);
+    color: var(--txt-claro);
+    opacity: 0.9;
+    position: sticky;
+    top: 0;
+    width: 100%; /* Garante que o header ocupe toda a largura da tela */
+    z-index: 1;
+}
+
+header nav {
+    width: 100%; /* Garante que o nav ocupe toda a largura do header */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    background-color: var(--fundo-bg-cinza);
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    width: 100%; /* Garante que o ul ocupe toda a largura do nav */
+    justify-content: center; /* Centraliza os itens dentro do ul */
+}
+
+header nav ul li {
+    padding: 0 0.75rem;
+    font-size: small;
+    cursor: pointer;
+}
+
+main section {
+    text-align: center;
+    display: flex;              /* Utiliza flexbox para o layout da seção */
+    flex-direction: column;     /* Alinha o conteúdo em coluna */
+    align-items: center;        /* Centraliza o conteúdo horizontalmente */
+    justify-content: center;    /* Centraliza o conteúdo verticalmente */
+}
+
+main section h1 {
+    color: var(--txt-preto);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: -0.28px;
+}
+
+main section img {
+    max-width: 25%;   /* Ajuste este valor conforme necessário */
+    height: auto;     /* Mantém a proporção da imagem */
+    display: block;   /* Remove o espaço em branco abaixo da imagem */
+    margin: 0 auto;   /* Centraliza a imagem horizontalmente */
+    display: block;
+}
